@@ -1,0 +1,272 @@
+{
+    "basics": {
+      "name": "Bastián Alexander Caba Navarro",
+      "label": "Desarrollador Web Full Stack",
+      "image": "/me.png",
+      "email": "bascn96@gmail.com",
+      "phone": "56 98528256",
+      "url": "https://bastiancaba.site",
+      "summary": "Desarrollador web, experimentado en desarrollo de múltiples sitios, y tiendas virtuales funcionales y profesionales, capaz de trabajar en equipo y solucionar problemas de forma eficiente, con amplias ganas de formar parte de un equipo de trabajo proactivo y profesional.",
+      "location": {
+        "address": "Arica #927",
+        "postalCode": "8260645",
+        "city": "La Florida, Santiago",
+        "countryCode": "CL",
+        "region": "Chile"
+      },
+      "profiles": [
+        {
+          "network": "LinkedIn",
+          "username": "bascn96",
+          "url": "https://www.linkedin.com/in/basti%C3%A1n-caba-navarro/"
+        },
+        {
+          "network": "GitHub",
+          "username": "bascn",
+          "url": "https://github.com/bascn"
+        }
+      ]
+    },
+    "work": [
+      {
+        "name": "Clinitest Limitada, Providencia, Chile",
+        "position": "DESARROLLADOR FULL STACK",
+        "url": "",
+        "startDate": "01-01-2022",
+        "endDate": "31-12-2023",
+        "summary": "Experiencia en desarrollo de aplicaciones web utilizando tecnologías Full Stack como HTML, PHP, CSS, JavaScript, JQuery, AJAX, PostgreSQL.\nConfiguración de equipos tanto hardware como software (Configuración de sistemas operativos (Win, Unix), montar y desmontar equipos físicos).\nExperiencia en el manejo de sistemas de control de versiones como Git.\nDesarrollo de software orientado a ERP.\nAdministración de Bases de datos relacional (Postgresql).",
+        "highlights": [
+          ""
+        ]
+      },
+      {
+        "name": "Clinitest Limitada, Providencia, Chile",
+        "position": "DESARROLLADOR FREELANCE",
+        "url": "",
+        "startDate": "01-11-2019",
+        "endDate": "31-12-2021",
+        "summary": "Desarrollo de modulos web, en base a sistema existente en Visual Basic.\nDesarrollo de sitio web para la empresa.\nDesarrollo de E-commerce más integración pasarela de pagos.\nAdministración de base de datos relacional (Postgresql).",
+        "highlights": [
+          ""
+        ]
+      }
+    ],
+    "volunteer": [{
+      "organization": "Organization",
+      "position": "Volunteer",
+      "url": "https://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description…",
+      "highlights": [
+        "Awarded 'Volunteer of the Month'"
+      ]
+    }],
+    "education": [{
+      "institution": "Instituto Profesional Duoc UC",
+      "url": "https://www.uoc.edu/portal/es/index.html",
+      "area": "Analista Programador Computacional",
+      "studyType": "Bachelor",
+      "startDate": "2016-03-01",
+      "endDate": "2021-11-01",
+      "score": "4.0",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    },{
+      "institution": "CoderHouse",
+      "url": "https://www.uoc.edu/portal/es/index.html",
+      "area": "Curso de JavaScript",
+      "studyType": "Bachelor",
+      "startDate": "2023",
+      "endDate": "2023",
+      "score": "4.0",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    },{
+      "institution": "CoderHouse",
+      "url": "https://www.uoc.edu/portal/es/index.html",
+      "area": "Curso de Desarrollo Web Básico",
+      "studyType": "Bachelor",
+      "startDate": "2023",
+      "endDate": "2023",
+      "score": "4.0",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    }],
+    "awards": [{
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }],
+    "certificates": [{
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }],
+    "publications": [{
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }],
+    "skills": [
+      {
+        "name": "HTML",
+        "level": "Avanzado",
+        "keywords": [
+          "Desarrollo Web", "Frontend"
+        ]
+      },
+      {
+        "name": "CSS",
+        "level": "Avanzado",
+        "keywords": [
+          "Desarrollo Web", "Frontend", "Diseño Responsive"
+        ]
+      },
+      {
+        "name": "JavaScript",
+        "level": "Medio",
+        "keywords": [
+          "Desarrollo Web", "Frontend", "Backend", "Fullstack"
+        ]
+      },
+      {
+        "name": "PHP",
+        "level": "Avanzado",
+        "keywords": [
+          "Desarrollo Web", "Backend"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "level": "Básico",
+        "keywords": [
+          "Desarrollo Web", "Frontend", "Backend", "JavaScript Superset"
+        ]
+      },
+      {
+        "name": "Node",
+        "level": "Básico",
+        "keywords": [
+          "Desarrollo Web", "Backend", "JavaScript", "Servidor"
+        ]
+      },
+      {
+        "name": "MySQL",
+        "level": "Avanzado",
+        "keywords": [
+          "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+        ]
+      },
+      {
+        "name": "Git",
+        "level": "Avanzado",
+        "keywords": [
+          "Control de Versiones", "Colaboración", "Código Fuente"
+        ]
+      },
+      {
+        "name": "GitHub",
+        "level": "Avanzado",
+        "keywords": [
+          "Control de Versiones", "Colaboración", "Código Fuente", "Git"
+        ]
+      },
+      {
+        "name": "PostgreSQL",
+        "level": "Avanzado",
+        "keywords": [
+          "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+        ]
+      },
+      {
+        "name": "React",
+        "level": "Medio",
+        "keywords": [
+          "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
+        ]
+      }
+    ],
+    "languages": [
+      {
+        "language": "Spanish",
+        "fluency": "Native speaker"
+      },
+      {
+        "language": "English",
+        "fluency": "Advanced"
+      }
+    ],
+    "interests": [{
+      "name": "Wildlife",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }],
+    "references": [{
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }],
+    "projects": [
+      {
+        "name": "CoderHouse HTML & CSS",
+        "isActive": true,
+        "description": "Diseño de web unicamente diseñada en html y css",
+        "highlights": [
+          "HTML & CSS"
+        ],
+        "url": "https://bascn.github.io/PFCabaNavarro/"
+      },
+      {
+        "name": "CoderHouse JavaScript",
+        "isActive": true,
+        "description": "Diseñar sistema básico con integración de API's en JavaScript",
+        "highlights": [
+          "JavaScript"
+        ],
+        "url": "https://bascn.github.io/EntregaFinal-CoderHouse-JS/"
+      },
+      {
+        "name": "Tienda Clinitest",
+        "isActive": true,
+        "description": "Tienda en linea con integración de pasarela de pagos, CMS Wordpress.",
+        "highlights": [
+          "Wordpress / WooCommerce"
+        ],
+        "url": "https://clinitest.cl/tienda"
+      },{
+        "name": "Web Clinitest",
+        "isActive": true,
+        "description": "Página informativa y autoadministrable, con información de la empresa.",
+        "highlights": [
+          "Wordpress"
+        ],
+        "url": "https://clinitest.cl/"
+      },{
+        "name": "ERP Web Clinitest",
+        "isActive": true,
+        "description": "Sistema completo ERP para la empresa.",
+        "highlights": [
+          "PHP, PostgreSQL, JavaScript"
+        ],
+        "url": "#"
+      },{
+        "name": "Gestión de Servicio Técnico Web Clinitest",
+        "isActive": true,
+        "description": "Sistema completo web para administrar la parte del servicio técnico de la empresa.",
+        "highlights": [
+          "PHP, PostgreSQL, JavaScript"
+        ],
+        "url": "#"
+      }
+    
+    ]
+  }
