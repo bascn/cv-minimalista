@@ -1,19 +1,25 @@
 ---
-import { basics } from '@cv';
-import Section from '../Section.astro';
-import Mail from '@/icons/Mail.astro';
-import Phone from '@/icons/Phone.astro';
-import LinkedIn from '@/icons/LinkedIn.astro';
-import GitHub from '@/icons/GitHub.astro';
-import WorldMap from '@/icons/WorldMap.astro';
+import { basics } from "@cv";
+import Section from "../Section.astro";
+import Mail from "@/icons/Mail.astro";
+import Phone from "@/icons/Phone.astro";
+import LinkedIn from "@/icons/LinkedIn.astro";
+import GitHub from "@/icons/GitHub.astro";
+import WorldMap from "@/icons/WorldMap.astro";
 
-const { name, label, image, location, profiles, phone, email,summary } = basics;
+const { name, label, image, location, profiles, phone, email, summary } =
+    basics;
 const { city, region } = location;
 
 const SOCIAL_ICONS: Record<string, any> = {
     LinkedIn,
-    GitHub
-}
+    GitHub,
+};
+
+const linkedInfo = profiles.find(({ network }) => network === "LinkedIn");
+const linkedUrl = linkedInfo?.url;
+
+const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 ---
 
 <Section>
@@ -23,51 +29,66 @@ const SOCIAL_ICONS: Record<string, any> = {
             <h2>{label}</h2>
             <span>
                 <WorldMap />
-             { city } , { region }
+                {city} , {region}
             </span>
-            <footer>
+
+            <footer class="print accesible-info">
+                {printInfo}
+            </footer>
+            <footer class="no-print">
                 {
                     email && (
-                        <a href={`mailto:${email}`}
+                        <a
+                            href={`mailto:${email}`}
                             title={`Enviame un correo electrónico!`}
                             target="_blank"
-                            rel="noopener noreferrer">
-                            <Mail/> 
+                            rel="noopener noreferrer"
+                        >
+                            <Mail />
                         </a>
                     )
                 }
                 {
                     phone && (
-                        <a href="https://w.app/1uEPOI"
+                        <a
+                            href="https://w.app/1uEPOI"
                             title={`Hablemos por WhatsApp!`}
                             target="_blank"
-                            rel="noopener noreferrer">
-                            <Phone/> 
+                            rel="noopener noreferrer"
+                        >
+                            <Phone />
                         </a>
                     )
                 }
                 {
-                    profiles.map(({network, url})=> {
-                        const Icon = SOCIAL_ICONS[network]
+                    profiles.map(({ network, url }) => {
+                        const Icon = SOCIAL_ICONS[network];
 
                         return (
                             <a
-                             href={url}
-                             title={`Visita mi perfil de ${network}`}
-                             target="_blank"
-                             rel="noopener noreferrer">
+                                href={url}
+                                title={`Visita mi perfil de ${network}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 <Icon />
-                             </a>
-                        )
-                    }) 
+                            </a>
+                        );
+                    })
                 }
             </footer>
         </div>
     </div>
 </Section>
+<div class="info">
+<div style="display: inline; margin-top: -25px; text-align: center; align-items: center;">
+    <button class="no-print" onclick="window.print()">Imprimir</button>
+    <a href="/cv-bastiancaba-m.pdf" class="button no-print">Descargar</a>
 
+    </div>
+</div>
 <style>
-    .container{
+    .container {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -75,46 +96,47 @@ const SOCIAL_ICONS: Record<string, any> = {
         gap: 1rem;
     }
 
-    .info{
+    .info {
         display: flex;
         flex-direction: column;
-        gap: .5rem;
+        gap: 0.5rem;
         padding-right: 32px;
     }
-    h1{
+    h1 {
         font-size: 2rem;
     }
-    h2{
+    h2 {
         color: #444;
         font-weight: 500;
         font-size: 1.1rem;
         text-wrap: balance;
     }
 
-    img{
+    img {
         aspect-ratio: 1 / 1;
         object-fit: cover;
         width: 128px;
         border-radius: 6px;
     }
 
-    span{
+    span {
         color: #666;
         display: flex;
         align-items: center;
-        gap: .25rem;
-        font-size: .85rem;
+        gap: 0.25rem;
+        font-size: 0.85rem;
         letter-spacing: -0.05rem;
     }
 
-    footer{
+    footer {
+        font-size: 0.65rem;
+        color: #666;
         display: flex;
         gap: 4px;
         margin-top: 8px;
-
     }
 
-    footer a{
+    footer a {
         color: #777;
         display: inline-flex;
         align-items: center;
@@ -124,12 +146,64 @@ const SOCIAL_ICONS: Record<string, any> = {
         height: 32px;
         width: 32px;
         border-radius: 6px;
-        transition: all .3s ease;
+        transition: all 0.3s ease;
     }
 
-    footer a:hover{
+    footer a:hover {
         background: #eee;
         border: 1px solid #ddd;
     }
-    
+
+button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+.button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 0.25em 0.75em;
+  }
+}
+
 </style>
