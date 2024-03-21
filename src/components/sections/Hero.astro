@@ -5,15 +5,21 @@ import Mail from "@/icons/Mail.astro";
 import Phone from "@/icons/Phone.astro";
 import LinkedIn from "@/icons/LinkedIn.astro";
 import GitHub from "@/icons/GitHub.astro";
+import Español from "@/icons/Español.astro";
+import English from "@/icons/English.astro";
 import WorldMap from "@/icons/WorldMap.astro";
+import Web from "@/icons/Web.astro";
 
 const { name, label, image, location, profiles, phone, email, summary } =
     basics;
 const { city, region } = location;
 
 const SOCIAL_ICONS: Record<string, any> = {
+    Web,
     LinkedIn,
     GitHub,
+    Español,
+    English
 };
 
 const linkedInfo = profiles.find(({ network }) => network === "LinkedIn");

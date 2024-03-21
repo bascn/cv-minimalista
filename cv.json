@@ -4,7 +4,7 @@
       "label": "Desarrollador Web Full Stack",
       "image": "/me.png",
       "email": "bascn96@gmail.com",
-      "phone": "56 98528256",
+      "phone": "+56 9 85282563",
       "url": "https://bastiancaba.site",
       "summary": "Desarrollador web, experimentado en desarrollo de múltiples sitios, y tiendas virtuales funcionales y profesionales, capaz de trabajar en equipo y solucionar problemas de forma eficiente, con amplias ganas de formar parte de un equipo de trabajo proactivo y profesional.",
       "location": {
@@ -16,6 +16,11 @@
       },
       "profiles": [
         {
+          "network": "Web",
+          "username": "bascn",
+          "url": "https://bascn.lol/"
+        },
+        {
           "network": "LinkedIn",
           "username": "bascn96",
           "url": "https://www.linkedin.com/in/basti%C3%A1n-caba-navarro/"
@@ -24,6 +29,16 @@
           "network": "GitHub",
           "username": "bascn",
           "url": "https://github.com/bascn"
+        },
+        {
+          "network": "English",
+          "username": "bascn",
+          "url": "https://cv-bascn962.netlify.app/"
+        },
+        {
+          "network": "Español",
+          "username": "bascn",
+          "url": "https://cv-bascn961.netlify.app/"
         }
       ]
     },
