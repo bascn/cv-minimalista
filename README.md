@@ -15,4 +15,4 @@ This minimalist CV template is open source and released under the MIT License. F
 
 ### Credits
 
-This minimalist CV template was inspired by the ____ project and elegance of minimalist design principles. Special thanks to the Astro.js community for providing a powerful framework for building static websites.
+This minimalist CV template was inspired by the BartoszJarocki project and elegance of minimalist design principles. Special thanks to the Astro.js community for providing a powerful framework for building static websites.
